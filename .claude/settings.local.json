@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(mkdir *)",
+      "Bash(npm run *)",
+      "Bash(docker compose *)",
+      "mcp__awsdocs__search_documentation",
+      "mcp__awsdocs__read_sections",
+      "mcp__github__search_repositories",
+      "mcp__github__get_me",
+      "mcp__github__push_files"
+    ]
+  },
+  "hooks": {
+    "FileChanged": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/review-on-change.sh",
+            "timeout": 120,
+            "statusMessage": "Running code review...",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
