@@ -50,4 +50,22 @@ export const PROJECTS = [
     githubUrl: 'https://github.com/veershukla/leetcode-curation-topical',
     highlight: false,
   },
+  {
+    id: 5,
+    title: 'Claude Code Portfolio',
+    description:
+      'This portfolio site — built in one shot with Claude Code. React + Vite + Tailwind served by nginx in Docker, tunneled publicly via ngrok.',
+    techStack: ['Claude Code', 'React', 'Vite', 'Tailwind CSS', 'Docker', 'ngrok'],
+    githubUrl: 'https://github.com/veershukla/claude-code-in-one-shot',
+    highlight: true,
+  },
+  {
+    id: 6,
+    title: 'DSA Visualizer',
+    description:
+      'Interactive visualizations for common data structures and algorithms — sorting, graph traversal, trees — to complement structured interview prep.',
+    techStack: ['React', 'SVG', 'Canvas', 'JavaScript'],
+    githubUrl: 'https://github.com/veershukla/dsa-visualizer',
+    highlight: false,
+  },
 ]
